@@ -1,0 +1,111 @@
+body{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+    
+}
+/*
+.show_party1_number{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(62, 187, 60);
+
+}
+
+.show_party2_number{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(192, 43, 226);
+}
+*/
+
+
+.parent1{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+
+.parent2{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.party1{
+    background-color: rgb(255, 252, 200);
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.party2{
+    background-color: #d1e5ff;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;   
+}
+
+.btn{
+    font-weight: bold;
+    width: 80px;
+    height: 20px;
+}
+
+.left_btn1{
+    width: 90px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-top: 30px; 
+    background-color: rgb(255, 252, 200);
+    font-weight: bold;
+}
+
+.left_btn2{
+    width: 90px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    background-color: #d1e5ff;
+    font-weight: bold;
+}
+
+.left_btn3{
+    width: 90px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-weight: bold;
+    background-color:rgb(246, 154, 154);
+}
+
+.left_btn4{
+    width: 90px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-weight: bold;
+    background-color: lightgreen;
+}
+
+.result1_css{
+    background-color: rgb(255, 252, 200);
+}
+
+.result2_css{
+    background-color: #d1e5ff;
+    
+}
+

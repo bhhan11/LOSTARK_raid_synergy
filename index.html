@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href= "./style.css">
+    <title>Raid Synergy</title>
+</head>
+<body>
+    <div style="float:left; width: 15%;">
+        <div><button id = 'btn_party1' class = 'left_btn1'>1번파티</button></div>
+        <div><button id = 'btn_party2' class = 'left_btn2'>2번파티</button></div>
+        <div><button id = 'btn_back' class = 'left_btn3'>뒤로가기</button></div>
+        <div><button id = 'btn_clear' class = 'left_btn4'>초기화</button></div>
+    </div>
+    
+
+    <div style="float:left; width:55%; margin-top: 30px">
+
+        <div class = 'parent1' style="margin-bottom: 15px">
+            <div>   
+                <button class="btn" id = 'shu1'>디스트로이어</button>
+                <button class="btn" id = 'shu2'>워로드</button>
+                <button class="btn" id = 'shu3'>버서커</button>
+                <button class="btn" id = 'shu4'>홀리나이트</button>
+            </div>
+            <div>
+                <button class="btn" id = 'sil1'>소서리스</button>
+                <button class="btn" id = 'sil2'>아르카나</button>
+                <button class="btn" id = 'sil3'>바드</button>
+                <button class="btn" id = 'sil4'>서머너</button>
+            </div>
+            <div>
+                <button class="btn" id = 'arm1'>리퍼</button>
+                <button class="btn" id = 'arm2'>블레이드</button>
+                <button class="btn" id = 'arm3'>데모닉</button>
+            </div>
+            <div>
+                <button class="btn" id = 'mu1'>스트라이커</button>
+                <button class="btn" id = 'mu2'>인파이터</button>
+                <button class="btn" id = 'mu3'>창술사</button>
+                <button class="btn" id = 'mu4'>배틀마스터</button>
+                <button class="btn" id = 'mu5'>기공사</button>
+            </div>
+            <div>
+                <button class="btn" id = 'hun1'>데빌헌터</button>
+                <button class="btn" id = 'hun2'>건슬링어</button>
+                <button class="btn" id = 'hun3'>블래스터</button>
+                <button class="btn" id = 'hun4'>스카우터</button>
+                <button class="btn" id = 'hun5'>호크아이</button>
+            </div>
+            <div>
+                <button class="btn" id = 'sp1'>도화가</button>
+                <button class="btn" id = 'sp2'>기상술사</button>
+            </div>
+        </div>    
+
+        
+
+        <div class = 'parent2'>
+            <div id = 'party1_border'>
+                
+                <div>
+                    <input readonly id = 'p1_raider1' class ='party1'>
+                </div>
+                <div>
+                    <input readonly id = 'p1_raider2' class ='party1'>
+                </div>
+                <div>
+                    <input readonly id = 'p1_raider3' class ='party1'>
+                </div>
+                <div>
+                    <input readonly id = 'p1_raider4' class ='party1'>
+                </div>
+            </div>
+            
+            <div id ='party2_border'>
+                
+                <div>
+                    <input readonly id = 'p2_raider1' class ='party2'>
+                </div>
+                <div>
+                    <input readonly id = 'p2_raider2' class ='party2'>
+                </div>
+                <div>
+                    <input readonly id = 'p2_raider3' class ='party2'>
+                </div>
+                <div>
+                    <input readonly id = 'p2_raider4' class ='party2'>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <button id = 'btn_result' style="margin-top: 10px;font-weight: bold;font-size: large;width: 70px;">완료</button>
+        </div>
+    </div>
+
+    <!--결과-->
+    <div style="float:left; width:30%; margin-top: 30px;text-align: left;">
+        
+        <div style="margin-bottom: 20px;">
+            <output style="font-size: 10px; font-weight: bold;">치명타 적중률</output>
+            <input readonly id = 'critical1' class ='result1_css' style="width: 76px;margin-right: 5px;">
+            <input readonly id = 'critical2' class="result2_css" style="width: 76px">
+            <hr>
+            
+        </div>
+        
+        <div>
+            <output style="font-size: 10px; font-weight: bold;">피해량 증가율</output>
+            <input readonly id = 'damage1' class ='result1_css' style="width: 70px;margin-right: 5px;">
+            <input readonly id = 'damage2' class ='result2_css' style="width: 70px">
+            
+        </div>
+        <div>
+            <output style="font-size: 10px; font-weight: bold;">공격력 증가율</output>
+            <input readonly id = 'attack1' class ='result1_css' style="width: 70px;margin-right: 5px;">
+            <input readonly id = 'attack2' class ='result2_css' style="width: 70px">
+        </div>
+        <div>
+            <output style="font-size: 10px; font-weight: bold;">벡해드 증가율</output>
+            <input readonly id = 'backHead1' class ='result1_css' style="width: 70px;margin-right: 5px;">
+            <input readonly id = 'backHead2' class ='result2_css' style="width: 70px">
+        </div>
+        <div>
+            <output style="font-size: 10px; font-weight: bold;">방어력 무시율</output>
+            <input readonly id = 'ignore1' class ='result1_css' style="width: 70px;margin-right: 5px;">
+            <input readonly id = 'ignore2' class ='result2_css' style="width: 70px">
+            
+        </div>
+        <div style="margin-bottom: 20px;margin-top: 10px;">
+            <output style="font-size: 10px; font-weight: bold;">파티 평균 데미지 증가율</output>
+            <input readonly id = 'total_damage1' class="result1_css" style="width: 45px;margin-right: 5px;">
+            <input readonly id = 'total_damage2' class ='result2_css' style="width: 45px;">
+            <hr>    
+        </div>
+
+        <div>
+            <output style="font-size: 10px; font-weight: bold;">공속 증가</output>
+            <input readonly id = 'attack_speed1' class ="result1_css" style="width: 70px;margin-right: 5px;">
+            <input readonly id = 'attack_speed2' class ='result2_css' style="width: 70px;">
+        </div>
+        <div style="margin-bottom: 20px;">
+            <output style="font-size: 10px; font-weight: bold;">이속 증가</output>
+            <input readonly id = 'move_speed1' class ="result1_css" style="width: 70px;margin-right: 5px;">
+            <input readonly id = 'move_speed2' class ='result2_css' style="width: 70px;">
+            <hr>
+        </div>
+        
+        <div>
+            <output style="font-size: 10px; font-weight: bold;">무력화</output>
+            <input readonly id = 'neutralization1' class ="result1_css" style="width: 20px;margin-right: 5px; margin-left: 13px;">
+            <input readonly id = 'neutralization2' class ='result2_css' style="width: 20px;">
+        </div>
+        <div>
+            <output style="font-size: 10px; font-weight: bold;">정화</output>
+            <input readonly id = 'purification1' class ="result1_css" style="width: 20px;margin-right: 5px;margin-left: 24px;">
+            <input readonly id = 'purification2' class ='result2_css' style="width: 20px;">
+        </div>
+        <div style="margin-bottom: 20px;">
+            <output style="font-size: 10px; font-weight: bold;">피감/쉴드</output>
+            <input readonly id = 'shield1' class ="result1_css" style="width: 20px;margin-right: 5px;margin: left 10px;">
+            <input readonly id = 'shield2' class ='result2_css' style="width: 20px;">
+        </div>
+        
+        <div>
+            <output style="font-size: 10px; font-weight: bold">최종 파티 시너지 등급</output>
+            <input readonly id = 'score1' class ="result1_css" style="width: 20px;margin-right: 1px;">
+            <input readonly id = 'score2' class ='result2_css' style="width: 20px;">
+        </div>
+
+    </div>    
+    
+    
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
